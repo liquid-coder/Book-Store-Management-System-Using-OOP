@@ -7,6 +7,10 @@ class Add_book():
         try:
             
             title = input("Enter the book title: ")
+            
+            if  title.isdigit():
+              print('Title needs to be a string') 
+              return
             author = input("Enter the author: ")
             book_id = input("Enter the book id: ")
             for i in self.book_data.book_list:
