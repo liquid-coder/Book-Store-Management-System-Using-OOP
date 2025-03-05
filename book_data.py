@@ -7,8 +7,11 @@ class Book_Data:
         self.book_list = self.load_book()
     def load_book(self):
         if os.path.exists(self.file):
-            with open(self.file, "r") as f:
-                return json.load(f)
+            if os.path.getsize(self.file)!=0:
+                with open(self.file, "r") as f:
+                    return json.load(f)
+            else:
+                return []
         else:
             return []
 

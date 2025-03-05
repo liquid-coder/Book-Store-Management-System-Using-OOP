@@ -1,18 +1,10 @@
 [
     {
-        "title": "Python Programming Basic",
-        "author": "Guido van Rossum",
-        "book_id": "2",
-        "genre": "Programming",
-        "price": 25.0,
-        "stock": 5
-    },
-    {
-        "title": "Java Programming Basic",
-        "author": "James Gosling",
-        "book_id": "3",
-        "genre": "Programming",
-        "price": 23.0,
+        "title": "dadada",
+        "author": "dadad",
+        "book_id": "1",
+        "genre": "dada",
+        "price": 22.0,
         "stock": 2
     }
 ]
