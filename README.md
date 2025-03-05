@@ -1,7 +1,7 @@
 
 <body>
 
-   <h1>🍽️ Book Store Management System</h1>
+   <h1>📖 Book Store Management System</h1>
 
   <p>This project is a <strong>Book Store Management System</strong> built using <strong>Object-Oriented Programming (OOP)</strong> principles in Python. It provides a simple and efficient way to manage a bookstore's inventory, allowing users to add, remove, search, and view books seamlessly.</p>
 
