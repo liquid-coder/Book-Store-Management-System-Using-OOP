@@ -30,13 +30,4 @@
         </pre>
     </section>
 
-  <section class="technologies">
-        <h2>📂 Technologies Used</h2>
-        <ul>
-            <li><strong>Python</strong></li>
-            <li><strong>OOP (Encapsulation, Inheritance, Polymorphism)</strong></li>
-        </ul>
-    </section>
 
-</body>
-</html>
