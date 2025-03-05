@@ -6,14 +6,18 @@ class Book_Data:
         self.file = file 
         self.book_list = self.load_book()
     def load_book(self):
-        if os.path.exists(self.file):
-            if os.path.getsize(self.file)!=0:
-                with open(self.file, "r") as f:
-                    return json.load(f)
-            else:
+        if os.path.exists(self.file):  
+            try:    
+                if os.path.getsize(self.file)!=0:
+                    with open(self.file, "r") as f:
+                        return json.load(f)
+            except json.JSONDecodeError:
                 return []
+
+                
         else:
-            return []
+            print('No such file exists !!!')  
+    
 
     def save_book(self,books):
         with open(self.file, "w") as f:

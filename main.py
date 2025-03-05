@@ -3,7 +3,9 @@ from view_books import View_Book
 from search_book import Search_Book
 from remove_book import Remove_Book
 from book_data import Book_Data
+
 def display_menu():
+
     print("\n--- Book Store Management System ---")
     print("1. Add Book")
     print("2. View Books")
@@ -12,19 +14,29 @@ def display_menu():
     print("5. Exit")
 
 def main():
+
     book_data = Book_Data()
-    print('List of Books in our Library :-')
-    count = 0
-    for i in book_data.load_book():
-        print('---------- ')
-        count += 1 
-        print('Book Number -',count)
-        print(f"Title: {i['title']}\nAuthor: {i['author']}\nBook ID: {i['book_id']}\nGenre: {i['genre']}\nPrice: {i['price']} Tk\nStock: {i['stock']}")
-        print('----------')
+
+    books = book_data.load_book()
+
+
+    if books:
+        print('List of Books in our Library :-')
+        for count, book in enumerate(books, start=1):
+            print('---------- ')
+            print('Book Number -', count)
+            print(f"Title: {book['title']}\nAuthor: {book['author']}\nBook ID: {book['book_id']}\nGenre: {book['genre']}\nPrice: {book['price']} Tk\nStock: {book['stock']}")
+            print('----------')
+    else:
+        print('Sorry, no books found in the library!')
+        print('Please add books to the library -->')
+
+
     add_book = Add_book(book_data)
     view_books = View_Book(book_data)
     search_book = Search_Book(book_data)
     remove_book = Remove_Book(book_data)
+
 
     while True:
         display_menu()

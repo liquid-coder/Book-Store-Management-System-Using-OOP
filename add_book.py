@@ -5,6 +5,7 @@ class Add_book():
     def add_book(self):    
         print("\n--- Add a New Book ---")
         try:
+            
             title = input("Enter the book title: ")
             author = input("Enter the author: ")
             book_id = input("Enter the book id: ")
