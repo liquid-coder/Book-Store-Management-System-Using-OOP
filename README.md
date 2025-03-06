@@ -20,12 +20,12 @@
         <h2>🏗️ Project Structure</h2>
         <pre>
 📦 Book-Store-Management-System
-├── 📄 main.py         # entry point of the system
+├── 📄 main.py         # initiates the system and show all the current books in the library
 ├── 📄 add_book.py     # user can add books
 ├── 📄 remove_book.py  # remove any books by providing book id
-├── 📄 search_book.py  # search any book by providing book id
+├── 📄 search_book.py  # search any book by providing book id/author/genre
 ├── 📄 view_books.py   # show the current list of books
-├── 📄 book_data.py    # stores book information and inventory operations
+├── 📄 book_data.py    # stores book information and inventory operations.
 └── 📄 books.json      # json file where the book details are stored
         </pre>
     </section>
